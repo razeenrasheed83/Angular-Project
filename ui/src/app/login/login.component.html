@@ -1,0 +1,18 @@
+<div>
+    <form (submit)="login()">
+        <!-- Your form content here -->
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">UserName</label>
+            <input type="text" class="form-control" name="uname" [(ngModel)]="userName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label" >Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="password">
+        </div>
+        <div class="text-danger">
+            {{errroMesaage}}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
